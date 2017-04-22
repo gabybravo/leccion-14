@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+<center>
+<h1> Formulario de Datos </h1>
+<form action=''>
+	<p>
+	<label for="name">Nombre:</label><br>
+	<input type= "text" name="name" required></p>
+
+	<p>
+	<label for="lastname">Apellido:</label><br>
+	<input type= "text" name="lastname" required></p>
+
+	<p>
+	<label for="fono">Teléfono:</label><br>
+	<input type= "tel" name="fono" pattern="[0-9]{9}"
+	title="Introduce tu teléfono con los 9 dígitos." required></p>
+
+	<p>
+	<label>Escoge tu auto favorito para poder continuar:</label><br><br>
+	<select type="dropdown" name= "auto" id="" required>
+		<option value="0">Escoge tu auto</option>
+		<option value="1">Volvo</option>
+		<option value='2'>Saab</option>
+        <option value='3'>Mercedes</option>
+        <option value='4'>Audi</option>
+	</select></p>
+	<p>
+
+	<p>
+	<label for="correo">Correo Electrónico:</label><br>
+	<input type= "email" name="correo"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ingresa tu email en el siguiente orden: caracteres@caracteres.cl" required></p>
+
+	<label for="pw">Crea tu contraseña:</label><br>
+	<input type="password" name="pw" pattern=".{6,}" title="Puede tener 6 o más caracteres." required></p>
+	<p><input type="submit" value="Enviar"></p>
+</form>
+</center>
+</body>
+</html>
